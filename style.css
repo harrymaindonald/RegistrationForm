@@ -1,0 +1,114 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.section-heading{
+    font-weight: 300;
+    margin:0 0 50px 0;
+    
+}
+
+.registration-container{
+    text-align: center;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    color: #494949;
+
+}
+
+.personal-details, .account-details{
+    border: 1px solid rgba(204, 204, 204, 0.6);;
+    padding: 40px 0 40px 0;
+    margin-bottom: 50px;
+    font-size: 16px;
+    box-shadow: 0 8px 2px 0 rgba(0,0,0,0.14), 0 3px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.info-line{
+    margin: 25px 0;
+    display:flex;
+    padding: 0 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-line label{
+    text-align: right;
+    flex-basis: 30%;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.input-container{
+    flex-basis: 80%;
+}
+
+.input-container input{
+    width: 70%;
+    padding: 6px 12px;
+    color: #494949;
+}
+
+#registerSubmitBtn {
+    margin-bottom: 50px;
+    border: 4px solid #494949;
+    color: #ffffff;
+    background: #494949;
+    cursor: pointer;
+    padding: 8px 40px;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 60px;
+    font-size:16px;
+}
+
+#registerSubmitBtn:hover{
+    background: #ffffff;
+    color: #494949;
+}
+
+/* Responsive CSS - Made from a 'Desktop First' Approach */
+
+
+
+@media (min-width: 1024px) and (max-width: 1280px){
+    .registration-container{
+        width: 65%;
+    }
+}
+
+@media (max-width: 1024px){
+    .registration-container{
+        width: 65%;
+    }
+}
+
+@media (max-width: 768px){
+    .registration-container{
+        width: 75%;
+    }
+
+    .info-line{
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 500px){
+    .registration-container{
+        width: 90%;
+    }
+
+    .personal-details, .account-details{
+        border: 1px solid rgba(204, 204, 204, 0.3);
+        margin-bottom: 25px;
+        box-shadow: none;
+
+    }
+
+    .info-line{
+        padding: 0 5%;
+    }
+}
